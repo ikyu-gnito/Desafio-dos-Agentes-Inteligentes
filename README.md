@@ -1,4 +1,4 @@
-🧩 Solucionador do Quebra-Cabeça de 15
+🧩 <h1>Solucionador do Quebra-Cabeça de 15<\h1>
 Este projeto implementa uma solução para o clássico jogo do Quebra-Cabeça de 15 (15-Puzzle) utilizando um algoritmo de Subida de Encosta Estocástica com reinícios aleatórios. O objetivo é organizar 15 peças numeradas em ordem crescente, deixando um espaço vazio.
 
 ✨ Funcionalidades
@@ -8,6 +8,7 @@ Heurística de Distância de Manhattan: Utiliza a distância de Manhattan para e
 Subida de Encosta Estocástica (Stochastic Hill Climbing): Emprega um algoritmo de busca meta-heurístico que tenta encontrar a solução ótima movendo-se iterativamente em direção a estados melhores, com uma probabilidade de aceitar movimentos "piores" para escapar de ótimos locais.
 Reinícios Aleatórios: Se o algoritmo ficar preso em um ótimo local, ele pode reiniciar a busca a partir de um novo estado inicial gerado aleatoriamente (embora atualmente um estado inicial fixo seja usado para demonstração).
 Interface de Linha de Comando: Exibe o estado do quebra-cabeça e o progresso da busca diretamente no console.
+
 🧠 Como Funciona
 O projeto aborda o problema do quebra-cabeça de 15, que é conhecido por ser NP-difícil. O algoritmo de Subida de Encosta Estocástica é usado para navegar no espaço de busca:
 
@@ -19,6 +20,7 @@ Em cada iteração, explora os vizinhos do estado atual.
 Prefere vizinhos com um valor heurístico menor (mais próximos do objetivo).
 Crucialmente, possui uma prob_aceitar_pior (probabilidade de aceitar pior) que permite ocasionalmente mover-se para um estado com um valor heurístico maior. Isso ajuda o algoritmo a escapar de mínimos locais, onde todos os vizinhos diretos são piores que o estado atual, mas um ótimo global pode existir mais adiante.
 A função tentativa_com_reinicios orquestra múltiplas tentativas a partir de um estado inicial (potencialmente) diferente se uma solução não for encontrada dentro de um certo número de iterações.
+
 🚀 Primeiros Passos
 Estas instruções permitirão que você obtenha uma cópia do projeto e o execute em sua máquina local.
 
